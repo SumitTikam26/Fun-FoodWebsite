@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: rgb(64, 63, 63);
+    color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    position: fixed;
+    top: 0%;
+    background-color: #000000;
+    z-index: 9;
+}
+.logo{
+    color: #fff;
+    font-size: 21px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-inline: 22px;
+}
+
+
+/* ========== Styling Main Page ============ */
+.main{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 141px;
+}
+.main img{
+    width: 600px;
+}
+.main-text{
+    margin-top: 44px;
+}
+.main h1{
+    font-size: 44px;    
+}
+.main p{
+    margin-top: 22px;
+    color: rgb(221, 220, 220);
+}
+.main button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(255, 106, 51);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 22px;
+    transition: all 1s ease;
+}
+.main button:hover{
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: orangered;
+}
+/* Main Page Styling Ends Here  */
+
+
+
+.head{
+    text-align: center;
+    padding: 90px;
+}
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foodCard{
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    margin-inline: 22px;
+    border-radius: 10px;
+    margin-top: 26px;
+    color: #000000;
+    cursor: pointer;
+}
+.foodCard img{
+    border-radius: 10px;
+    width: 100%;
+}
+.foodCard p{
+    margin-top: 7px;
+}
+.foodCard button{
+    width: 130px;
+    background-color: rgb(255, 109, 56);
+    color: #fff;
+    padding: 3px;
+    border: none;
+    font-size: 18px;
+    margin-top: 7px;
+    border-radius: 10px;
+}
+.foodCard button:hover{
+    background-color: orangered;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: all 1s ease;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.reviewCard{
+    width: 300px;
+    padding: 12px;
+    background-color: #fff;
+    text-align: center;
+    color: #000000;
+    margin-inline: 22px;
+    border-radius: 10px;
+}
+.reviewCard img{
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain; 
+    /* object-fit ====  fill,contain,cover */
+
+}
+.reviewCard p{
+    margin: 8px auto;
+    font-size: 14px;
+
+}
+.reviewCard .ratings{
+    margin: 10px auto;
+    /* border: 1px solid black; */
+    padding: 3px 9px;
+    color: #333;
+    border-radius: 5px;
+    background-color: rgb(253, 89, 29);
+}
+
+
+.trends{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.trendFood{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.trendFood img{
+    object-fit: fill;
+    border: 1px solid white;
+    border-radius: 50% ;
+    height: 250px;
+    width: 250px;
+    margin-inline: 12px;
+}
+
+
+.blogs{
+    display: flex;
+    justify-content: center;
+}
+.blogCard{
+    width: 300px;
+    height: 270px;
+    background-color: #fff;
+    color: #000;
+    margin-inline: 22px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.blogCard img{
+    border-radius: 10px; 
+    width: 100%;   
+}
+.blogCard a{
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 12px;
+    background-color: rgb(253, 113, 63);
+    position: relative;
+    border-radius: 10px;
+    top: 12px;
+    transition: all 1s ease;
+}
+.blogCard a:hover{
+    border-radius: 0px;
+    background-color: orangered;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+    padding: 66px;
+    margin-top: 66px;
+}
+.text p{
+    margin-top: 10px;
+}
+
+
+.cardDetail{
+    width: 500px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 4%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    color: black;
+}
+.cardDetail img{
+    width: 300px;
+}
+.cardDetail i{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: 1px 3px;
+    /* border-radius: 50%; */
+    font-size: 25px;
+}
+.cardDetail i:hover{
+    background-color: #0000004d;
+    padding: 1px 3px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;    
+    border-radius: 50%;
+    font-weight: 700;
+}
